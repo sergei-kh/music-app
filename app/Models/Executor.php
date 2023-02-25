@@ -14,6 +14,8 @@ class Executor extends Model
         "name",
     ];
 
+    public $timestamps = false;
+
     /**
      * @return HasMany
      */

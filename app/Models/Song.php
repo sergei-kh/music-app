@@ -14,6 +14,8 @@ class Song extends Model
         "name",
     ];
 
+    public $timestamps = false;
+
     /**
      * @return BelongsToMany
      */

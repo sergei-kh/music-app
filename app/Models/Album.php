@@ -18,6 +18,20 @@ class Album extends Model
     ];
 
     /**
+     * Timestamps to be set.
+     *
+     * @var string[]
+     */
+    public $timestamps = ["created_at"];
+
+    /**
+     * Disable model update timestamp.
+     *
+     * @var string|null
+     */
+    public const UPDATED_AT = null;
+
+    /**
      * @return BelongsTo
      */
     public function executor(): BelongsTo
